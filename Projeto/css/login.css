@@ -1,11 +1,11 @@
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    background: url(img/games1.jpg);
+    background: url(../img/games1.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ label{
     position: absolute;
     top:0;
     left: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     transform: translateY(18px);
     transition: .25s ease-in-out;
 }
