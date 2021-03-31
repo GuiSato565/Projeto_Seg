@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cadastro</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Cadastre-se</h1>
+    <form id="register-form" action="">
+      <div class="box">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+      </div>
+      <div class="half-box spacing">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome" >
+      </div>
+      <div class="half-box">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+      </div>
+      <div class="half-box spacing">
+        <label for="lastname">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Confirmação de senha</label>
+        <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+      </div>
+      <div>
+      </div>
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Registrar">
+        <a href="./login.html"><p>Fazer Login</p></a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
