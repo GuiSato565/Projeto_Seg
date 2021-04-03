@@ -1,0 +1,52 @@
+/*Sem alteracoes*/
+body{
+    background-color: #00143d;
+}
+
+/*Sem alteracoes*/
+div.container{
+    background-color: #00143d;
+}
+
+/*Congiguracoes afeta a tag h3 e a*/
+.carousel-caption{
+    position: relative;
+    top: 60%;
+    text-decoration: none; /*Retira o sublinhado da tag a*/
+}
+
+/*Aplica na tag a*/
+.item a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+
+    /*Cria uma sombra pro texto*/
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(253, 253, 255), 0 0 0.2em rgb(255, 255, 255);
+    
+    /*Altera a fonte da tag a*/
+    font: 1.5em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+}
+
+/*Altera o tamanho da fonte*/
+p{
+ font-size: 15px;
+}
+
+/*Altera o tamanho da fonte*/
+h3{
+    font-size: 20px;
+}
+
+/*Regra aplicada quando a tela chega a ser menor que tantos pixels*/
+@media screen and (max-width: 980px) {
+    
+    /*Aplica nas lista do carousel*/
+    #myCarousel{
+        margin:auto;
+        min-width: auto;
+        max-height: auto;
+    }
+  }
+  
+  
