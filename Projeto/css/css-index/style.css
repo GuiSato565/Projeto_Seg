@@ -1,0 +1,39 @@
+/*Font-Family pego no google font*/
+body {margin: 0; font-family: 'New Tegomin', sans-serif;}
+
+/*Menu*/
+ul.topnav {
+  list-style-type: none; /*Sem o estilo a lista*/
+  margin: 0; 
+  padding: 0;
+  overflow: hidden; /*Exibe o conteudo dentro da caixa (div)*/
+  background-color: rgb(0, 0, 0);
+}
+
+/*Coloca a lista na horizontal*/
+ul.topnav li {float: left;}
+
+
+ul.topnav li a {
+  display: block; /*O elemento gera uma caixa de elementos li*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /*Retirar o sublinhado de link*/
+}
+
+/*Acao de quando passa o mouse em cima do elemento*/  /*Muda de branco para preto*/
+ul.topnav li a:hover:not(.active) {background-color: rgb(255, 255, 255); color:black}
+
+/*O fundo da Logo*/
+ul.topnav li a.active {background-color: #070250;}
+
+/*User no canto superior direito*/
+ul.topnav li.right {float: right;}
+
+/*Uma regra de quando a tela ter tantos pixels*/
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;} /*Os elementos links, ficam na vertical, um embaixo do outro*/
+}
+
