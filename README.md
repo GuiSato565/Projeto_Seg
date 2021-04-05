@@ -3,6 +3,8 @@ Projeto TADS
 
 03-04-2021
 
-Inclui o menu bar, com alguns elementos
+Inclui as imagens dos jogos abaixo do carrossel
 
-Inclui o Carrosel, com 3 imagens de jogos
+Inclui um botao sem estilo logo abaixo
+
+Inclui Uma noticia duplicada, para completar o template
