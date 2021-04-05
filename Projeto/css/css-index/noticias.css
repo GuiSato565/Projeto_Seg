@@ -10,13 +10,13 @@
     max-width: 400px;
     position: relative;
     top:25px;
-    left:85px;
+    left:250px;
 }
 
 .noticia .desc1{
     font-size: 15px;
     margin-top: 35px;
-    margin-left: 95px;
+    margin-left: 255px;
     margin-bottom: 15px;
 }
 
@@ -35,7 +35,7 @@
     max-width: 400px;
     position: relative;
     bottom:270px;
-    margin-left: 550px;
+    margin-left: 700px;
 }
 
 .noticia .desc2{
@@ -43,7 +43,7 @@
     margin-left: 65px;
     position: relative;
     bottom:260px;
-    margin-left: 560px;
+    margin-left: 700px;
 }
 
 .noticia .img-noticia2:hover {
