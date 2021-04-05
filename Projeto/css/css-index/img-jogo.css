@@ -8,11 +8,14 @@
 }
 
 .cont-jogos .jogos img{
-    padding:5px;
-    max-width:250px;
+    margin:12px;
+    padding:1px;
+    width: 180px;
     position:relative;
     top:70px;
-    left:150px;
+    left:170px;
+    float:left;
+    
 }
 
 .cont-jogos .jogos 
@@ -22,10 +25,15 @@
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
+        border: 1px solid blue;
       }
 
-.cont-jogos .jogos p{
+.cont-jogos .jogos #img-jogo{
+    color:black;
+    font-style: normal;
+    font-size: 20px;
+    float:right;
+    font-family: 'New Tegomin', sans-serif;
     position: relative;
-    left:12%;
-    float: left;
+    top:1550px;
 }
