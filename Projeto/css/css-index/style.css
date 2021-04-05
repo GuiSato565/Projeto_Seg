@@ -1,5 +1,10 @@
 /*Font-Family pego no google font*/
-body {margin: 0; font-family: 'New Tegomin', sans-serif;}
+
+body {
+  margin: 0; 
+  font-family: 'New Tegomin', sans-serif;
+  
+}
 
 /*Menu*/
 ul.topnav {
@@ -20,6 +25,7 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none; /*Retirar o sublinhado de link*/
+  font-family: 'New Tegomin', sans-serif;
 }
 
 /*Acao de quando passa o mouse em cima do elemento*/  /*Muda de branco para preto*/
