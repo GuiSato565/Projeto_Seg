@@ -1,0 +1,31 @@
+.cont-jogos h1{
+    font-family: 'New Tegomin', sans-serif;
+    text-align: center;
+    color:black;
+    margin: auto;
+    position:relative;
+    top:50px;
+}
+
+.cont-jogos .jogos img{
+    padding:5px;
+    max-width:250px;
+    position:relative;
+    top:70px;
+    left:150px;
+}
+
+.cont-jogos .jogos 
+    img:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+.cont-jogos .jogos p{
+    position: relative;
+    left:12%;
+    float: left;
+}
