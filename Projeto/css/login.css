@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url(../img/games1.jpg);
+    background-image: url(../img/games1.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;

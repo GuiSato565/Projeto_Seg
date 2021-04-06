@@ -1,11 +1,13 @@
+/*Titulo Noticias*/
 .noticia .titulo h1{
-    color:black;
-    position: relative;
+    color:rgb(0, 0, 0);
+    position: relative; /*Relativo ao conteudo adjacente*/
     top:20px;
     text-align: center;
     font-family: 'New Tegomin', sans-serif;
 }
 
+/*Primeira noticia*/
 .noticia .img-noticia1 {
     max-width: 400px;
     position: relative;
@@ -13,6 +15,7 @@
     left:250px;
 }
 
+/*Descricao da noticia 1*/
 .noticia .desc1{
     font-size: 15px;
     margin-top: 35px;
@@ -20,17 +23,19 @@
     margin-bottom: 15px;
 }
 
-
+/*Animacao que ocorre ao passar o mouse por cima*/
 .noticia .img-noticia1:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
+
+    /*Tipo de motor de renderizacao*/
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1); 
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
  
   }
 
-
+/*Segunda noticia*/
 .noticia .img-noticia2{
     max-width: 400px;
     position: relative;
@@ -38,6 +43,7 @@
     margin-left: 700px;
 }
 
+/*Descricao da segunda noticia*/
 .noticia .desc2{
     font-size: 15px;
     margin-left: 65px;
@@ -46,6 +52,8 @@
     margin-left: 700px;
 }
 
+
+/*Animacao igual a primeira noticia*/
 .noticia .img-noticia2:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -55,6 +63,8 @@
  
   }
 
+
+/*Rodape, apto a alteracoes*/
 footer h1{
     text-align: center;
 }

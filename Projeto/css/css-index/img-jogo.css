@@ -1,12 +1,14 @@
+/*Titulo Explorar mais jogos*/
 .cont-jogos h1{
     font-family: 'New Tegomin', sans-serif;
     text-align: center;
-    color:black;
+    color:rgb(0, 0, 0);
     margin: auto;
     position:relative;
     top:50px;
 }
 
+/*Configuracoes sobre as imagens dos jogos*/
 .cont-jogos .jogos img{
     margin: 5px;
     padding: 1px;
@@ -18,6 +20,7 @@
     
 }
 
+/*Animacao*/
 .cont-jogos .jogos 
     img:hover {
         -webkit-transform: scale(1.1);
@@ -25,11 +28,12 @@
         -o-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
-        border: 1px solid blue;
+        border: 1px solid blue; /*Animacao com borda azul*/
       }
-
-.cont-jogos .jogos #img-jogo{
-    color:black;
+      
+/* Apto a mudancas
+.cont-jogos .jogos {
+    color:rgb(255, 0, 0);
     font-style: normal;
     font-size: 20px;
     float:right;
@@ -37,8 +41,10 @@
     position: relative;
     top:1550px;
 }
+*/
 
-/*Botao*/
+
+/*"Botao" ==> Apto a mudancas*/ 
 .result  a h1 {
     color:#ccbe00;
     text-align: center;
