@@ -68,3 +68,48 @@
 footer h1{
     text-align: center;
 }
+
+/*Uma regra de quando a tela ter tantos pixels*/
+@media screen and (max-width: 600px) {
+    /*Titulo Noticias*/
+    .noticia .titulo h1{
+    color:rgb(0, 0, 0);
+    position: relative; /*Relativo ao conteudo adjacente*/
+    top:5px;
+    text-align: center;
+    font-family: 'New Tegomin', sans-serif;
+}
+
+    .noticia .img-noticia1 {
+        max-width: 400px;
+        position: relative;
+        top:25px;
+        left: 75px;
+    } 
+
+    /*Descricao da noticia 1*/
+    .noticia .desc1{
+    font-size: 15px;
+    margin-top: 35px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+    /*Segunda noticia*/
+    .noticia .img-noticia2{
+    max-width: 400px;
+    position: relative;
+    bottom: -5px;
+    margin-left: 75px;
+}
+
+    /*Descricao da segunda noticia*/
+    .noticia .desc2{
+    font-size: 15px;
+    margin-left: 65px;
+    position: relative;
+    bottom:-15px;
+    margin-left: 8px;
+ }
+
+}

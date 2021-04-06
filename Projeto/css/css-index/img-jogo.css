@@ -59,3 +59,28 @@ a{
     text-decoration: none;
 }
 
+/*Uma regra de quando a tela ter tantos pixels*/
+@media screen and (max-width: 800px) {
+    .cont-jogos .jogos img
+    {   
+        margin: 5px;
+        padding: 1px;
+        width: 200px;
+        position:relative;
+        top:70px;
+        left:90px;
+        float: none;
+    
+    } /*Os elementos links, ficam na vertical, um embaixo do outro*/
+
+    /*"Botao" ==> Apto a mudancas*/ 
+    .result  a h1 {
+    color:#ccbe00;
+    text-align: center;
+    margin-top: 78px;
+    font-size: 30px;
+    font-family: 'New Tegomin', sans-serif; 
+    text-decoration: solid;
+}
+  }
+  
