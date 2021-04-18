@@ -1,175 +1,394 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 
-<head>
+<html lang="pt-br">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
 
-<!--Pastas-->
-<link rel="stylesheet" href="./css/css-index/style.css">
-<link rel="stylesheet" href="./css/css-index/wall.css">
-<link rel="stylesheet" href="./css/css-index/img-jogo.css">
-<link rel="stylesheet" href="./css/css-index/noticias.css">
+    <title>Games BR</title>
 
-<!--Inclusao a fonte-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-  
-<!--Incluido o botstrap Carousel-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS com SCSS -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+    <!--CSS Externo-->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/estilo.css">
+
+    <!-- Requiring the file "font-awesome.css" -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <!-- NavBar ==> Parte do menu bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+
+            <!-- Logo do Site-->
+            <a class="navbar-brand" href="#"><img src="https://i.pinimg.com/originals/41/32/51/4132516a10dc600e8d41b360b4c951a0.png" width="100"></a>
+
+            <!-- Ferramenta que guarda os nav-item --> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu bar-->
+            <div class="collapse navbar-collapse" id="navbarSite">
+                
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Notícias</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Artigos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Análise</a>
+                    </li>
+
+                </ul>
+
+                <!-- NavBar ==> Usuario -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Dropdown List-->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                            <!-- Icon User-->
+                            <i class="fas fa-user"></i>
+                            User
+                        </a>
+
+                        <div class="dropdown-menu">
+
+                            <!-- Opções do User-->
+                            <a class="dropdown-item" href="cadastro.html">Registro</a>
+                            <a class="dropdown-item" href="login.html">Logar</a>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Carrossel de Imagens-->
+    <div id="carouselSite" class="carousel slide d-md-block d-none" data-ride="carousel">
+
+        <!--3 Imagens-->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+        </ol>
 
 
-</head>
+        <div class="carousel-inner">
 
-<body>
+            <!-- Inicio Carrossel-->
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/24/b2/85/24b2853a5437c5ddbc3df87b2577475b.jpg" width="100%" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="https://g1.globo.com/pop-arte/games/noticia/2020/09/16/god-of-war-vai-ganhar-nova-historia-focada-no-ragnarok-em-2021.ghtml" style="text-decoration: none;" class="text-light">
+                    <h1>God of War</h1>
+                    </a>
+                </div>
+            </div>
 
-<!--Menu bar-->  
-<ul class="topnav">
+            <div class="carousel-item">
+                <img src="https://progameguides.com/wp-content/uploads/2020/06/horizon-zero-dawn-world-desktop-wallpaper-scaled.jpg" width="100%" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="https://br.ign.com/horizon-forbidden-west/82353/feature/horizon-forbidden-west-detalhes-do-trailer-de-anuncio-que-voce-pode-ter-perdido" style="text-decoration:none;" class="text-light">
+                        <h1>Horizon Zero Dawn</h1>
+                    </a>   
+                    </div>
+            </div>
 
-  <!--Menu Logo-->
-  <li><a class="active" href="#home">Game Store</a></li>
+            <div class="carousel-item">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7c9e8a33-fddf-48e8-bf8d-21f68f891eb8/de7ebnr-dcc205f0-0507-4f9c-b5f0-7aa1b05d94d1.jpg/v1/fill/w_1192,h_670,q_70,strp/resident_evil_8_village__by_pargraph_de7ebnr-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMDgwIiwicGF0aCI6IlwvZlwvN2M5ZThhMzMtZmRkZi00OGU4LWJmOGQtMjFmNjhmODkxZWI4XC9kZTdlYm5yLWRjYzIwNWYwLTA1MDctNGY5Yy1iNWYwLTdhYTFiMDVkOTRkMS5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.lVVaUejUOb3pc4itC3I761r-DU3-maKcTErf3JUud8g" width="100%" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="https://br.ign.com/resident-evil-village/88785/news/resident-evil-village-todas-as-novidades-do-showcase" style="text-decoration: none;" class="text-light">
+                        <h1>Resident Evil Village</h1>
+                    </a>    
+                    </div>
+            </div>    
 
-  <!--Menu-->
-  <li><a href="#">Loja</a></li>
-  <li><a href="#">Explorar</a></li>
-  <li><a href="#">Contato</a></li>
+        </div>
+        <!-- Fim do Carrossel-->
 
-  <!--Menu Login/Sign in-->
-  <li class="right"><a href="login.html">User</a></li>
-</ul>
+        <!--Seta de voltar-->
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
 
-<!--Inclusao do Carousel-->
-<div class="container">
+        <!-- Seta de Avançar-->
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
- <!-- Modo slides -->
- <div class="carousel-inner">
-
-  <div class="item active">
-    <img src="https://i.pinimg.com/originals/71/1f/38/711f381f7d617d0e473a07cf07fbf63e.png" alt="demon-slayer" style="width:100%;">
-    <div class="carousel-caption">
-      <h3>Demon Slayer: Hinokami Kepputan</h3>
-     <a href="https://www.tecmundo.com.br/voxel/211049-jogo-oficial-demon-slayer-ganha-novo-video-gameplay.htm">Em breve</a>
-  </div>
-  </div>
-
-  <div class="item">
-    <img src="https://i.pinimg.com/originals/24/b2/85/24b2853a5437c5ddbc3df87b2577475b.jpg" alt="god-of-war" style="width:100%;">
-    <div class="carousel-caption">
-      <h3>God of War Ragnarok</h3>
-      <a href="https://www.godofwar-ragnarok.com/2020/12/god-of-war-ragnarok-trailer.html">Em breve</a>
     </div>
-  </div>
 
-  <div class="item">
-    <img src="https://i.pinimg.com/originals/4b/10/87/4b10879b240cdea1bd5e5e39303797c7.jpg" alt="days-gone" style="width:100%;">
-    <div class="carousel-caption">
-      <h3>Days Gone</h3>
-      <a href="https://www.playstation.com/pt-br/ps-plus/">Dísponivel em breve no PS Plus </a>
-    </div>
-  </div>
-<!--Fim do menu-->
+    <!-- Seção de Conteúdo-->
+    <div class="container">
 
-</div>
+        <div class="row">
+            <div class="col-11 col-md-12 text-center ml-md-0 ml-2">
+                
+                <h1 class="display-3 my-5"><i class="fas fa-gamepad" aria-hidden="true"></i></i>
+                    Imperdível
+                </h1>
 
-<!-- Seta - Direitas|Esquerdas -->
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left"></span>
-  <span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-  <span class="sr-only">Next</span>
-</a>
-</div>
-</div>
+            </div>
 
-<!--Fim Carousel-->
+            <!-- Alguns itens referentes aos novos jogos-->
+            <section id="#jogos">
 
-<!--Parte com conteudo-->
-
-<div class="cont-jogos">
-  <h1>Explorar mais jogos</h1>
-  <div class="jogos">
-    <!--Alterar os links depois-->
-    <a href="https://www.ubisoft.com/pt-br/game/watch-dogs/legion">
-      <img src="https://i.pinimg.com/originals/36/1b/78/361b78017b07746c8fd077d72d3cb364.png">
-    </a>
+                <div class="container-fluid">
     
-    <!--Alterar os links depois-->
-    <a href="https://www.ubisoft.com/pt-br/game/watch-dogs/legion">
-      <img src="https://i.pinimg.com/originals/6b/95/ab/6b95abe377135d6b9a7dc074bd3c7432.png">
-    </a>
+                    <div class="container">
+    
+                        <div class="row">
+    
+                            <div class="col-lg-4">
+                                <a class="nav-link" href="https://store.playstation.com/pt-br/product/UP9000-PPSA01342_00-DEMONSSOULS00000">
+                                <img class="img-fluid d-block img-thumbnail" src="https://image.api.playstation.com/pr/bam-art/111/744/3cff7c93-191f-42a4-aa9d-160f5b9406c0.jpg?w=440&thumb=false" width="100%">
+                                </a>
+                            </div>
+    
+                            <div class="col-lg-4">
+                                <a class="nav-link" href="#">
+                                <img class="img-fluid d-block img-thumbnail" src="https://i.pinimg.com/originals/a2/79/ee/a279eeeb23461bf90caf6305dbd3fa03.gif" width="100%">
+                                </a>
+                            </div>
+    
+                            <div class="col-lg-4">
+                                <a class="nav-link" href="https://www.ubisoft.com/pt-br/game/assassins-creed/valhalla">
+                                <img class="img-fluid d-block img-thumbnail" src="https://image.api.playstation.com/pr/bam-art/111/744/bd33c5b2-c7b9-43ad-a090-ec3a234e7ada.jpg?w=440&thumb=false" width="100%">
+                                </a>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </section>
 
-    <!--Alterar os links depois-->
-    <a href="https://www.ubisoft.com/pt-br/game/watch-dogs/legion">
-      <img src="https://i.pinimg.com/originals/db/bc/52/dbbc52145a7ea7890c01fb3550682c97.png">
-    </a>
+            <section id="#jogos">
 
-    <!--Alterar os links depois-->
-    <a href="https://www.ubisoft.com/pt-br/game/watch-dogs/legion">
-      <img src="https://i.pinimg.com/originals/62/4d/6a/624d6a215a214d2aeef39b369fc247f3.png">
-    </a>
+                <div class="container-fluid">
+    
+                    <div class="container">
+    
+                        <div class="row">
+    
+                            <div class="col-lg-4">
+                                <a class="nav-link" href="https://store.nintendo.com/super-mario-3d-world-bowser-s-fury-us.html">
+                                <img class="img-fluid d-block img-thumbnail" src="https://i.pinimg.com/originals/92/2f/30/922f3097f0dd2e2f27670bcd1b80c35c.jpg" width="100%">
+                                </a>
+                            </div>
+    
+                            <div class="col-lg-4">
+                                <a class="nav-link" href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6">
+                                <img class="img-fluid d-block img-thumbnail" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5aKyMpaqbTCcwF97aZchIF/b5ab91868c7d1f72657c2d31dd4c2e59/Tetra_Header_Mobile_CG.png" width="100%">
+                                </a>
+                            </div>
+    
+                            <div class="col-lg-4">
+                                <a class="nav-link" href="https://store.playstation.com/pt-br/product/UP0292-PPSA01347_00-GODFALL000000000">
+                                <img class="img-fluid d-block img-thumbnail" src="https://image.api.playstation.com/pr/bam-art/111/744/95a76fbb-15a4-4dca-b0b3-71abfd830289.jpg?w=440&thumb=false" width="100%">
+                                </a>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </section>
+            <!-- Fim dos itens-->
 
-    <!--Alterar os links depois-->
-    <a href="https://www.ubisoft.com/pt-br/game/watch-dogs/legion">
-      <img src="https://i.pinimg.com/originals/23/49/e4/2349e4cddb767a273d1d493e79d55287.png">
-    </a>
+        </div>
 
-  </div>
+    </div>
 
-</div>
-<!--Fim das imagens-->
+    <!-- Opção de visualização de mais itens-->
+    <div class="container">
 
-<!--Botao sem estilo-->
-<div class="result">
- <a href="#"><h1>Veja todos os jogos</h1></a>
-</div>
-<!--Estilizar o botao depois-->
+        <div class="row">
 
-<!--Noticias-->
-<div class="noticia">
-  <div class="titulo">
-    <h1>Últimas notícias</h1>
-  </div>
-  <div >
+            <div class="col-11 col-md-12 text-center ml-md-0 ml-2 my-4 mb-5">
+                
+                <h5><i class="fas fa-plus" aria-hidden="true"></i>
+                    <a href="#" style="text-decoration: none;" class="text-dark">Ver mais</a>
+                </h5>
 
-    <!--Inserie o link da noticia depois-->
-    <a href="#">
-    <img class="img-noticia1" src="https://i.pinimg.com/originals/55/92/ea/5592ea4df39a58ac9e67fc36ef22a8f4.jpg">  
-    </a>
-    <article class="desc1">05 Março 2021 - Jogos disponíveis na PS Plus em breve</article>
+            </div>
+        </div>
+    </div>
 
-  </div>
-  <div >
+    <!-- Trailer de 3 jogos-->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4"><i class="fas fa-ghost text-primary col-12 col-md-1" aria-hidden="true"></i>
+                        Jogos no hype no momento
+                    </h1>
+                    <hr>
+                </div>
+            </div>
 
-    <!--Inserie o link da noticia depois-->
-    <a href="#">
-    <img class="img-noticia2" src="https://i.pinimg.com/originals/55/92/ea/5592ea4df39a58ac9e67fc36ef22a8f4.jpg">  
-    </a>
-    <article class="desc2">05 Março 2021 - Jogos disponíveis na PS Plus em breve</article>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">
+                                It Takes Two
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">
+                                Resident Evil Village
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">
+                                Horizon Forbidden West
+                            </a>
+                        </li>
 
-  </div>
-</div>
-<!--Fim das noticias-->
+                    </ul>
 
-<!--Inicio do rodape-->
-<footer>
-  <h1>Por enquanto é isso!</h1>
-</footer>
+                    <div class="tab-content" id="nav-pills-content">
+                        <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe  class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/2AysHTv7X8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mt-4 mt-md-0">
+                                    <p>
+                                        <strong>It Takes Two</strong> é um jogo de plataforma de ação e aventura desenvolvido pela 
+                                        Hazelight Studios e lançado pela Electronic Arts sob o selo EA Originals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-</body>
+                        <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" width="699" height="393" src="https://www.youtube.com/embed/BDlUtPTQEOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 mt-4 mt-md-0">
+                                    <p>
+                                        <strong>Resident Evil Village</strong>, conhecido no Japão como Biohazard: Village, é um futuro jogo 
+                                        eletrônico de survival horror desenvolvido e publicado pela Capcom.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/OpfuQulZHR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6 mt-4 mt-md-0">
+                                    <p>
+                                        <strong>Horizon Forbidden West</strong> é um futuro jogo eletrônico de RPG de ação desenvolvido 
+                                        pela Guerrilla Games e publicado pela Sony Interactive Entertainment para 
+                                        PlayStation 4 e PlayStation 5.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <!--Fim dos Trailers-->
+
+    <!-- Rodapé -->
+    <footer>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <div class="col-12 mt-10 bg-primary pb-1">
+
+                <div class="container">
+        
+                    <div class="collapse navbar-collapse" id="navbarSite">
+                        
+                        <ul class="navbar-nav mr-auto">
+
+                            <a class="navbar-brand mr-0 mt-2" href="#"><img src="https://i.pinimg.com/originals/41/32/51/4132516a10dc600e8d41b360b4c951a0.png" width="50"></a>
+
+                            <li class="nav-item">
+                                <p class=" ml-2 mt-2 text-light">gamesbr@gmail.com <br>55+ (11) 9999-9999</p>
+                                
+                            </li>
+ 
+                        </ul>
+
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item dropdown">
+
+                                    <p class="navbar-brand h1">© Todos os direitos reservados</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+  
+            </div>
+
+        </nav>
+
+    </footer>
+    <!-- Fim do rodapé-->
+
+    <!-- jQuery,Popper.js, then Bootstrap JS ... all called from our source/-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+  </body>
 </html>
-
