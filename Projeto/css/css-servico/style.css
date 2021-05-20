@@ -1,0 +1,40 @@
+body{
+    font-size: 20px;
+    font-family: 'New Tegomin', serif;
+}
+
+.navbar{
+    background-color: rgba(245, 245, 245, 0.486);
+    
+}
+
+.margin-left{
+    margin-left: 50px;
+}
+
+.quem-somos{
+    background-color: rgba(255, 255, 255, 0.788);
+    color: black;
+    
+}
+
+.margin{
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+.parceiros{
+    background-color: #fb2e01;
+    color:whitesmoke;
+}
+
+.servicos{
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+.bg-footer{
+    background-color: black;
+    color: white;
+}
+
+
