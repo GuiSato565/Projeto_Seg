@@ -69,7 +69,7 @@ O site irá te redirecionar para área de login, por conta do contéudo do site,
 
 # Link do Site
 
-link: gamesbr.atwebpages.com
+link: http://gamesbr.atwebpages.com/
 
 
 
