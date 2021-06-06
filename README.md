@@ -61,6 +61,12 @@ E o código do banco de dados, estará disponível no arquivo <code>teste.sql</c
 
 
 
+# Observação
+
+O site irá te redirecionar para área de login, por conta do contéudo do site, estar disponível apenas para os usuário cadastrados. Então acesse a opção **"Ainda não sou cadastrado"**,  e depois logue com os dados inseridos.
+
+
+
 # Link do Site
 
 link: http://gamesbr.atwebpages.com/
