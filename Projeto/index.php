@@ -1,0 +1,748 @@
+<?php
+session_start();
+include('veririca_login.php');
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+    <head>
+        <title>Games BR</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS com SCSS -->
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+        <!--CSS Externo-->
+        <link rel="stylesheet" href="node_modules/bootstrap/compiler/estilo.css">
+
+        <!-- Requiring the file "font-awesome.css" -->
+        <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <!-- NavBar ==> Parte do menu bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <div class="container">
+
+                <!-- Logo do Site-->
+                <a class="navbar-brand" href="#"><img src="https://i.pinimg.com/originals/41/32/51/4132516a10dc600e8d41b360b4c951a0.png" width="100"></a>
+
+                <!-- Ferramenta que guarda os nav-item --> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu bar-->
+                <div class="collapse navbar-collapse" id="navbarSite">
+                
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.php">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="explorar.html">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- NavBar ==> Usuario -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Dropdown List-->
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                                <!-- Icon User-->
+                                <i class="fas fa-user"></i>
+                                User <?php echo $_SESSION['nome'];?>
+                            </a>
+
+                            <div class="dropdown-menu">
+
+                                <!-- Opções do User-->
+                                <a class="dropdown-item" href="cadastro.php">Registro</a>
+                                <a class="dropdown-item" href="login.php">Logar</a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Carrossel de Imagens-->
+        <div id="carouselSite" class="carousel slide d-md-block d-none" data-ride="carousel">
+
+            <!--Controle Carrossel-->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselSite" data-slide-to="1"></li>
+                <li data-target="#carouselSite" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner">
+
+                <!-- Inicio Carrossel-->
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/originals/24/b2/85/24b2853a5437c5ddbc3df87b2577475b.jpg" width="100%" class="img-fluid d-block">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#" style="text-decoration: none;" class="text-light">
+                        <h1>God of War</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://progameguides.com/wp-content/uploads/2020/06/horizon-zero-dawn-world-desktop-wallpaper-scaled.jpg" width="100%" class="img-fluid d-block">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#" style="text-decoration:none;" class="text-light">
+                            <h1>Horizon Zero Dawn</h1>
+                        </a>   
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/originals/3b/d8/96/3bd896b67f7ca1d513c1d19e5ed44939.jpg" width="100%" class="img-fluid d-block">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="#" style="text-decoration: none;" class="text-light">
+                            <h1>Resident Evil Village</h1>
+                        </a>    
+                    </div>
+                </div>    
+
+            </div>
+            <!-- Fim do Carrossel-->
+
+            <!--Seta de voltar-->
+            <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+
+            <!-- Seta de Avançar-->
+            <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Avançar</span>
+            </a>
+
+        </div>
+
+        <!-- Seção de Conteúdo-->
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-11 col-md-12 text-center ml-md-0 ml-2">
+                
+                    <h1 class="display-3 my-5"><i class="fas fa-gamepad" aria-hidden="true"></i></i>
+                        Imperdível
+                    </h1>
+
+                </div>
+
+                    <!-- Alguns itens referentes aos novos jogos-->
+                    <section id="#jogos">
+
+                        <div class="container-fluid">
+    
+                            <div class="container">
+    
+                                <div class="row">
+
+                                    <div class="row justify-content-sm-center">
+
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="card mb-5">
+                                                <div class="card-body">     
+                                                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">
+                                                        <img class="card-img top" src="https://image.api.playstation.com/pr/bam-art/111/744/3cff7c93-191f-42a4-aa9d-160f5b9406c0.jpg?w=440&thumb=false">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="card mb-5">
+                                                <div class="card-body">     
+                                                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">
+                                                        <img class="card-img top" src="https://i.pinimg.com/originals/a2/79/ee/a279eeeb23461bf90caf6305dbd3fa03.gif">
+                                                    </a>         
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="card mb-5">
+                                                <div class="card-body">     
+                                                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">
+                                                        <img class="card-img top" src="https://image.api.playstation.com/pr/bam-art/111/744/bd33c5b2-c7b9-43ad-a090-ec3a234e7ada.jpg?w=440&thumb=false">
+                                                    </a>           
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="card mb-5">
+                                                <div class="card-body">     
+                                                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal3">
+                                                        <img class="card-img top" src="https://i.pinimg.com/originals/92/2f/30/922f3097f0dd2e2f27670bcd1b80c35c.jpg">
+                                                    </a>           
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="card mb-5">
+                                                <div class="card-body">     
+                                                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal4">
+                                                        <img class="card-img top" src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5aKyMpaqbTCcwF97aZchIF/b5ab91868c7d1f72657c2d31dd4c2e59/Tetra_Header_Mobile_CG.png">
+                                                    </a>           
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6 col-md-4">
+                                            <div class="card mb-5">
+                                                <div class="card-body">     
+                                                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal5">
+                                                        <img class="card-img top" src="https://image.api.playstation.com/pr/bam-art/111/744/95a76fbb-15a4-4dca-b0b3-71abfd830289.jpg?w=440&thumb=false">
+                                                    </a>           
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Fim dos itens-->
+            </div>          
+        </div>
+
+        <!-- Opção de visualização de mais itens-->
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-11 col-md-12 text-center ml-md-0 ml-2 my-4 mb-5">
+                
+                    <h5><i class="fas fa-plus" aria-hidden="true"></i>
+                        <a href="explorar.html" style="text-decoration: none;" class="text-dark">Ver mais</a>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Trailer de 3 jogos-->
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4"><i class="fas fa-ghost text-primary col-12 col-md-1" aria-hidden="true"></i>
+                            Jogos no hype do momento
+                        </h1>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">
+                                    It Takes Two
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">
+                                    Resident Evil Village
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">
+                                    Horizon Forbidden West
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content" id="nav-pills-content">
+                            <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe  class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/2AysHTv7X8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mt-4 mt-md-0">
+                                        <p>
+                                            <strong>It Takes Two</strong> é um jogo de plataforma de ação e aventura desenvolvido pela 
+                                            Hazelight Studios e lançado pela Electronic Arts sob o selo EA Originals.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" width="699" height="393" src="https://www.youtube.com/embed/BDlUtPTQEOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-sm-6 mt-4 mt-md-0">
+                                        <p>
+                                            <strong>Resident Evil Village</strong>, conhecido no Japão como Biohazard: Village, é um futuro jogo 
+                                            eletrônico de survival horror desenvolvido e publicado pela Capcom.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/OpfuQulZHR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-sm-6 mt-4 mt-md-0">
+                                        <p>
+                                            <strong>Horizon Forbidden West</strong> é um futuro jogo eletrônico de RPG de ação desenvolvido 
+                                            pela Guerrilla Games e publicado pela Sony Interactive Entertainment para 
+                                            PlayStation 4 e PlayStation 5.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+        <!--Fim dos Trailers-->
+
+        <!-- Rodapé -->
+        <footer>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+                <div class="col-12 mt-10 bg-primary pb-1">
+
+                    <div class="container">
+        
+                        <div class="collapse navbar-collapse" id="navbarSite">
+                        
+                            <ul class="navbar-nav mr-auto">
+
+                                <a class="navbar-brand mr-0 mt-2" href="#"><img src="https://i.pinimg.com/originals/41/32/51/4132516a10dc600e8d41b360b4c951a0.png" width="50"></a>
+
+                                <li class="nav-item">
+                                    <p class=" ml-2 mt-2 text-light">gamesbr@gmail.com <br>55+ (11) 9999-9999</p>
+                                
+                                </li>
+ 
+                            </ul>
+
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item dropdown">
+
+                                    <p class="navbar-brand h1">© Todos os direitos reservados</p>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+  
+                </div>
+
+            </nav>
+
+        </footer>
+        <!-- Fim do rodapé-->
+
+        <!--Incio dos Modals-->
+        <!--Modal-->
+        <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ver mais</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                    </div>
+
+                
+                    <div class="modal-body"> 
+                            
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">
+                                            Demon Souls
+                                        </a>
+                                </ul>
+                                <div class="tab-content" id="nav-pills-content">
+                                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/JiqGi3GMTko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                                <div class="col-sm-12 mt-4 mt-md-0">
+                                                    <p>
+                                                        Do PlayStation Studios e Bluepoint Games, chega um remake do clássico de 
+                                                        PlayStation: Demon's Souls. Totalmente reconstruído do zero e aprimorado, 
+                                                        este remake apresenta os horrores dessa terra de fantasia sombria e nebulosa 
+                                                        a uma nova geração de jogadores.
+                                                    </p>
+                                                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" href="https://store.playstation.com/pt-br/product/UP9000-PPSA01342_00-DEMONSSOULS00000">
+                                                                Compre Já
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <!--Modal 2-->
+        <div class="modal fade" id="siteModal1" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ver mais</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                    </div>
+
+                
+                    <div class="modal-body"> 
+                            
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav2" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="nav-pills-02" data-toggle="pill" href="#nav-item-01">
+                                        Hades
+                                        </a>
+                                    </li>    
+                                </ul>
+                                <div class="tab-content" id="nav-pills-content">
+                                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                        <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe width="853" height="480" src="https://www.youtube.com/embed/91t0ha9x0AE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                        <div class="col-sm-12 mt-4 mt-md-0">
+                                                            <p>
+                                                                Desafie o deus dos mortos enquanto você batalha para sair do Submundo neste jogo 
+                                                                roguelike dos mesmos criadores de Bastion, Transistor e Pyre.
+                                                            </p>
+                                                            <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav2">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" href="https://store.steampowered.com/app/1145360/Hades/">
+                                                                        Compre Já
+                                                                    </a>
+                                                            </ul>
+                                                        </div>
+                                            </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal 3-->
+        <div class="modal fade" id="siteModal2" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ver mais</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                
+                    <div class="modal-body"> 
+                            
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="nav-pills-02" data-toggle="pill" href="#nav-item-01">
+                                            Assasin's Creed
+                                        </a>
+                                    </ul>
+                                <div class="tab-content" id="nav-pills-content">
+                                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/ssrNcwxALS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 mt-4 mt-md-0">
+                                                <p>
+                                                    Torne-se Eivor, um invasor Viking poderoso, e leve seu clã das adversas costas da 
+                                                    Noruega para um novo lar em meio às exuberantes terras agrícolas da Inglaterra do 
+                                                    século IX...
+                                                </p>
+                                                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="https://www.ubisoft.com/pt-br/game/assassins-creed/valhalla">
+                                                            Compre Já
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 4-->
+        <div class="modal fade" id="siteModal3" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ver mais</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                    </div>
+
+                
+                    <div class="modal-body"> 
+                            
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="nav-pills-02" data-toggle="pill" href="#nav-item-01">
+                                            Mario 3D World
+                                        </a>
+                                </ul>
+                                <div class="tab-content" id="nav-pills-content">
+                                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/ppkX8epoD9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                                <div class="col-sm-12 mt-4 mt-md-0">
+                                                    <p>
+                                                        A jogabilidade de Super Mario faz um retorno nesta nova aventura. Bowser se tornou gigantesco e 
+                                                        perdeu todo o controle! Explore o Lago Lapcat e suas ilhas, complete os objetivos para coletar Cat 
+                                                        Shines, e junte-se a Bowser Jr. para trazer seu grande e mau pai de volta ao normal. Cuidado com os 
+                                                        ataques do Bowser em toda a ilha.
+                                                    </p>
+                                                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3">
+                                                        <li class="nav-item">
+                                                        <a class="nav-link active" href="https://store.nintendo.com/super-mario-3d-world-bowser-s-fury-us.html">
+                                                            Compre Já
+                                                        </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5-->
+        <div class="modal fade" id="siteModal4" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ver mais</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                
+                    <div class="modal-body"> 
+                            
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3" role="tablist">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" id="nav-pills-02" data-toggle="pill" href="#nav-item-01">
+                                    Far Cry 6
+                                    </a>
+                                </ul>
+                                <div class="tab-content" id="nav-pills-content">
+                                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="870" height="370" src="https://www.youtube.com/embed/Jp5Y-a_oiPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                                <div class="col-sm-12 mt-4 mt-md-0">
+                                                    <p>
+                                                        Anton Castillo promete restaurar a prosperidade do país insular de Yara, enquanto 
+                                                        prepara o filho Diego para se tornar o próximo El Presidente.
+                                                    </p>
+                                                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" href="https://www.ubisoft.com/pt-br/game/far-cry/far-cry-6">
+                                                            Pré-Venda
+                                                           </a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6-->
+        <div class="modal fade" id="siteModal5" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ver mais</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                
+                    <div class="modal-body"> 
+                            
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="nav-pills-02" data-toggle="pill" href="#nav-item-01">
+                                        Godfall
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="nav-pills-content">
+                                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/P9p_t408_vA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                                <div class="col-sm-12 mt-4 mt-md-0">
+                                                    <p>
+                                                    Godfall é um novo jogo de caça-espólios da próxima geração. Ele se passa em um universo de fantasia cheio de cavaleiros heroicos e magia arcana.
+                                                    </p>
+                                                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav3">
+                                                        <li class="nav-item">
+                                                        <a class="nav-link active" href="https://www.playstation.com/pt-br/games/godfall/">
+                                                            Compre Já
+                                                        </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim dos Modals-->
+
+        <!-- jQuery,Popper.js, then Bootstrap JS ... all called from our source/-->
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+             })
+        </script>
+
+    </body>
+    
+</html>
