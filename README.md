@@ -34,6 +34,8 @@ Luan Costa Santana Pereira RA: 920111242
 
 - Adobe XD
 - Adobe Spark
+- Visual Studio Code
+- Eclipse
 
 ---
 
