@@ -59,13 +59,19 @@ E o código do banco de dados, estará disponível no arquivo <code>teste.sql</c
 
 ------
 
+### Prototipos
 
+No site foi usado dois modelos de layouts, feitos no Adobe XD e a logo foi feita no Adobe Spark.
+
+Os protótipos estarão disponíveis na raíz do projeto.
+
+-----
 
 # Observação
 
 O site irá te redirecionar para área de login, por conta do contéudo do site, estar disponível apenas para os usuário cadastrados. Então acesse a opção **"Ainda não sou cadastrado"**,  e depois logue com os dados inseridos.
 
-
+---------
 
 # Link do Site
 
