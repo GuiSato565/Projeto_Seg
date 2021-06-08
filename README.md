@@ -75,6 +75,8 @@ O site foi hospedado na Award Space e o banco de dados foi usado no próprio fre
 
 O site irá te redirecionar para área de login, por conta do contéudo do site, estar disponível apenas para os usuário cadastrados. Então acesse a opção **"Ainda não sou cadastrado"**,  e depois logue com os dados inseridos.
 
+Talvez em alguma sessão do site o loading esteja um pouco lento, isso é por conta de que o host é gratuito.
+
 ---------
 
 # Link do Site
