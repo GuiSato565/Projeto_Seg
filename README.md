@@ -59,11 +59,15 @@ E o código do banco de dados, estará disponível no arquivo <code>teste.sql</c
 
 ------
 
-### Prototipos
+## Prototipos
 
 No site foi usado dois modelos de layouts, feitos no Adobe XD e a logo foi feita no Adobe Spark.
 
 Os protótipos estarão disponíveis na raíz do projeto.
+
+## Hospedagem
+
+O site foi hospedado na Award Space e o banco de dados foi usado no próprio free hosting. 
 
 -----
 
