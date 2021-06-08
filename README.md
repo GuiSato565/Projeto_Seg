@@ -2,7 +2,7 @@
 
 ---
 
-### Grupos
+### Grupo
 
 Guilherme Sato Sabino Kimura  RA: 920110827
 
