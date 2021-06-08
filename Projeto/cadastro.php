@@ -8,7 +8,7 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cadastro</title>
+  <title>Cadastro </title>
   <link rel="stylesheet" href="./css/css-cadastro/cadastro.css">
 </head>
 <body>
