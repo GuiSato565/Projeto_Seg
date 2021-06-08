@@ -79,6 +79,11 @@ Talvez em alguma sessão do site o loading esteja um pouco lento, isso é por co
 
 ---------
 
+### Referências
+
+Usamos como exemplo esse repositório:
+https://github.com/GuilhermeBorges3Ddev/Boostrap4_FullPages.git
+
 # Link do Site
 
 link: http://gamesbr.atwebpages.com/
