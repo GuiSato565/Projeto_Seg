@@ -7,7 +7,7 @@ include('veririca_login.php');
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Área Restrita</title>
 <link rel="stylesheet" href="css/css-login/login.css">
 <!-- Bootstrap CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
